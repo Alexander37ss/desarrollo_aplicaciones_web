@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica de web con bases de datos</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery-3.6.1.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Práctica Web</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="registrarDatos.html">Registar</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                Opciones
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="index.html">Inicio</a>
+                <a class="dropdown-item" href="registrarDatos.html">Registrar</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="consultarDatos.php">Consultar</a>
+              </div>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+          </form>
+        </div>
+    </nav><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="jumbotron">
+                    <h1 class="display-4">Práctica de desarrollo web con conexión a bases de datos</h1>
+                    <p class="lead">
+                        En esta práctica se va a desarrollar un CRUD en PHP con MySQL.
+                        Contiene las siguientes opciones:
+                         <ul>
+                            <li>Registrar</li>
+                            <li>Consultar</li>
+                            <li>Editar</li>
+                            <li>Eliminar</li>
+                         </ul>
+                    </p>
+                    <hr class="my-4">
+                    <p>Esta práctica pertenece al parcial #1</p>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center">
+        <hr>
+        2022 &copy; Cetis107 Desarrollo Web
+    </footer>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>

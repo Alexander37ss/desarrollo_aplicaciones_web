@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica de web con bases de datos</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery-3.6.1.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="index.html">Práctica Web</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="registrarDatos.html">Registar</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                Opciones
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="index.html">Inicio</a>
+                <a class="dropdown-item" href="registrarDatos.html">Registrar</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="consultarDatos.php">Consultar</a>
+              </div>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+          </form>
+        </div>
+    </nav><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>Registrar Usuario</h1><hr>
+                <form action="" method="post">
+                    <div class="form-group">
+                        <label for="">Nombre:</label>
+                        <input type="text" class="form-control" name="nombre" placeholder="Teclea el nombre">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Edad:</label>
+                        <input type="number" class="form-control" name="edad" placeholder="Teclea la edad">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="radio" name="sexo"> Masculino <br>
+                        <input type="radio" name="sexo"> Femenino
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Domicilio:</label>
+                        <textarea name="domicilio" id="" cols="30" rows="10" class="form-control"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Fecha de nacimiento:</label>
+                        <input type="date" class="form-control" name="fecha_nacimiento">
+                    </div>
+                    <div>
+                        <input type="submit" class="btn btn-primary" value="Registrar">
+                        <a href="consultarDatos.php" class="btn btn-danger">Cancelar</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center">
+        <hr>
+        2022 &copy; Cetis107 Desarrollo Web
+    </footer>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
