@@ -76,8 +76,8 @@
                             <td><?php echo $row["domicilio"]; ?></td>
                             <td><?php echo $row["fecha_nacimiento"]; ?></td>
                             <td>
-                                <a href="" class="btn btn-primary">Editar</a>
-                                <a href="" class="btn btn-danger">Eliminar</a>
+                                <a href="actualizarRegistro.php?id=<?php echo $row["id"]; ?>" class="btn btn-primary">Editar</a>
+                                <a href="eliminarRegistro.php?id=<?php echo $row["id"]; ?>" class="btn btn-danger">Eliminar</a>
                             </td>
                         </tr>
                       <?php 
